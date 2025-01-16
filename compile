@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Compiling..."
+gcc -m32 -c utils/multiboot.s -o utils/multiboot.o
+gcc -ffreestanding -m32 -c kernel.c -o kernel.o
+
+ld -m elf_i386 -T utils/linker.ld -o boot/kernel.bin utils/multiboot.o kernel.o
+
+rm kernel.iso
+grub-mkrescue -o kernel.iso .
+
+echo "Done."
