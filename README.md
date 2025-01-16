@@ -8,3 +8,4 @@ This project was a way for me to explore how a kernel works. I built a simple te
 # Requirements
 - GCC
 - grub-mkrescue
+- qemu-system-x86_64
