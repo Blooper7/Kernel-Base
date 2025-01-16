@@ -3,4 +3,8 @@ This project was a way for me to explore how a kernel works. I built a simple te
 
 # How to use
 1. Make sure you compile it first with the "compile" script
-2. Run it with the "run" script. Requires QEMU
+2. Run it with the "run" script.
+
+# Requirements
+- GCC
+- grub-mkrescue
