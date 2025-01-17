@@ -174,7 +174,7 @@ void terminal_get_input() {
 		quit=1;
 	} else if (inputBufferContains("info",4)) {
 		write("Terminal from scratch, written in C and assembly\n");
-		write("Author: Sam Poyner\n");
+		write("Author: Blooper7\n");
 		write("Commands: hello exit info\n");
 	} else if (inputBufferContains("cls",3)) {
 		cursor_x=0;
@@ -276,7 +276,7 @@ void kernel_main() {
 	// TODO : backspace adds an \b to the input buffer. Fix.
 	//        Likely solution: handle backspacing in the keyboard manager code.
 	clearBuffer();
-	write("Welcome to Sam P's Kernel!");
+	write("Welcome to Blooper7's Kernel!");
 	write(newline);
 	write("Don't forget to say hello!");
 	// TODO: Map regular shift+num and shift+symbol scancodes
