@@ -222,7 +222,7 @@ bool shift_pressed = false;
 char scancode_to_char(unsigned char scancode) {
 	static char keymap[] = {
 		[0x1C] = '\n', // Enter
-		[0x0E] = '\n', //Backspace
+		[0x0E] = '\b', //Backspace
 		[0x02] = '1'
 	};
 	return keymap[scancode];
